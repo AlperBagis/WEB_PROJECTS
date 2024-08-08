@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        body {
+            margin: 0px;
+            height: 860vh;
+        }
+        /* başlık başlar */
+        .container img {
+            width: 100%;
+            height: 130px;
+        }
+        .container {
+            position: relative;
+        }
+        .ayrılamam {
+            position: absolute;
+            top: 25px;
+            left: 500px;
+            font-size: 40px;
+            font-style: italic;
+            opacity: 0.5;
+        }
+        /* başlık biter */
+
+        /* ilk flex başlar */
+
+        .flex-container {
+            display: flex;
+            margin-left: 60px;
+            margin-top: 40px;
+            column-gap: 70px;
+
+        }
+
+        .flex-container .box1 {
+            width: 630px;
+            height: 320px;
+            border: 3px solid black;
+            padding: 15px;
+            background-color: red;
+            color: white;
+        }
+
+        .box1 p {
+            font-size: 23px;
+        }
+
+        .box1 span {
+            position: relative;
+            font-size: 20px;
+            color:black;
+            left: 410px;
+            top: 30px;
+        }
+
+        /* ilk flex biter */
+    
+        /* Hikayeler başlar */
+        .mısır-hikayesi {
+            padding: 20px 30px;
+            background-color: grey;
+            color: white;
+            position: relative;
+            left: 100px;
+            top: 65px;
+            border: 3px solid lightgreen;
+            width: 1300px;
+            height: 500px;
+            font-size: 17px;
+            
+        }
+
+        .mısır-hikayesi b {
+            color: black;
+            font-size: 20px;
+            
+        }
+
+        .mısır-hikayesi img {
+            position: absolute;
+            top: 200px;
+            left: 850px;
+        }
+
+        .asker-hikayesi {
+            border: 3px solid lightgreen;
+            background-color: gray;
+            width: 1300px;
+            height: 450px;
+            margin-top: 100px;
+            margin-left: 100px;
+            position: relative;
+            padding: 20px 30px;
+            font-size: 17px;
+            color: white;
+        }
+
+        .asker-hikayesi b {
+            font-size: 20px;
+            color: black;
+        }
+
+        .asker-hikayesi img {
+            position: absolute;
+            bottom: 50px;
+            right: 80px;
+        }
+
+        .izmirden-dönüş {
+            border: 3px solid lightgreen;
+            background-color: gray;
+            width: 1300px;
+            height: 550px;
+            margin-top: 100px;
+            margin-left: 100px;
+            position: relative;
+            padding: 20px 30px;
+            font-size: 17px;
+            color: white;
+        }
+        .izmirden-dönüş img {
+            position: absolute;
+            bottom: 50px;
+            right: 80px;
+        }
+
+        .izmirden-dönüş b {
+            font-size: 20px;
+            color: black;
+        }
+        
+        /* Hikayeler biter */
+
+        /* Nutuk bölümü başlar */
+        .nutuktan {
+            border: 3px solid brown;
+            background-color: burlywood;
+            padding: 20px 30px;
+            margin-top:100px;
+            margin-left:100px;
+            width: 1300px;
+            height: 1660px;
+            
+        }
+
+        .nutuktan h1 {
+            font-size: 40px;
+            position: relative;
+            left: 400px;
+            color: black;
+        }
+
+        .neora_nebura h2{
+            color:rgb(0, 26, 255);
+        }
+
+        .neora_nebura span {
+            font-size: 20px;
+        }
+
+        .neora_nebura b {
+            font-size: 24px;
+        }
+
+        .korkuyorlar h2 {
+            color: rgb(0, 26, 255);
+        }
+        .korkuyorlar span {
+            font-size: 20px;
+        }
+        .korkuyorlar b {
+            font-size: 24px;
+        }
+        .serbest  h2{
+            color: rgb(0, 26, 255);
+        }
+        .serbest span {
+            font-size: 20px;
+        }
+        .serbest b {
+            font-size: 24px;
+        }
+        /* Nutuk bölümü biter*/
+
+        .karo {
+            border: 3px solid black;
+            width: 750px;
+            height: 400px;
+            margin-top: 120px;
+            margin-left: 360px;
+            background-color: brown;
+            padding:30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .Başlık {
+            border: 2px solid black;
+            background-color: aqua;
+            width: 500px;
+            display: flex;
+            justify-content: center;
+            margin-top: 120px;
+            margin-left: 500px;
+        }
+        .sözler {
+            border: 3px solid black;
+            width: 1000px;
+            height: 500px;
+            margin-top: 80px;
+            margin-left: 230px;
+            background-color: black;
+            padding: 30px;
+            color: white;
+            font-size: 24px;
+            font-style: italic;
+        }
+        .sonsöz {
+            font-size: 36px;
+            font-style: italic;
+            position: relative;
+            top: 150px;
+            left: 150px;
+            color: red;
+        }
+        .sonsöz .web {
+            position: relative;
+            left: 330px;
+
+        }
+        .sonsöz .hazırlayan {
+            position: relative;
+            top: 100px;
+            left: 380px;
+            color: black;
+        }
+    </style>
+
+    <div class="container">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTS_sJNpDYqjMPJ4I93zYk8nMotMHiZBdI26g&usqp=CAU">
+        <div class="ayrılamam">Ayrılamam Yolundan...</div>
+    </div>
+
+    <div class="flex-container">
+        <div class="box1">
+            <h2> Önsöz </h2>
+            <p> Bu site Atatürk'e ait videolar, hikayeler ve sözlerden oluşmaktadır. Umuyorum ki bu basit site ile 
+                atamızın şu sözlerine hizmet etmiş olurum ; 
+                <br><br>
+                <i> Elbet bir gün beni unutturmak isteyenler olacaktır ama Türk gençliği buna izin vermeyecektir. </i>
+            </p>
+            <span><b> Hazırlayan: Alper Bağış </b></span>
+        </div>
+        <div class="box2">
+            <iframe width="660" height="350" src="https://www.youtube.com/embed/TOLGIqMVcvg?si=jMJFFpteod-lyPit" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+     </div>
+
+     <div class="mısır-hikayesi">
+        <img width="420" height="280" src="https://www.indyturk.com/sites/default/files/styles/1368x911/public/article/main_image/2023/12/30/1234251-1097520272.jpg?itok=_LduSUHc">
+        <h1> Atatürk'ün Mısır Devlet Başkanı ile Anısı </h1>
+        <p> Bir gün müslüman memleketlerinden birinde (Mısır'da) bağımsızlık davası için çalışan liderlerden biri, Mustafa Kemal'i
+            görmeye gelmişti. Kendisine:
+            <br><br>
+            -Bizim hareketinde başına geçmek istemez misiniz ? diye sordu. <br> <br>
+            Olabilecek şey değildi ama insan yoklamalarını pek seven Mustafa Kemal: <br> <br>
+            -Yarım milyonunuz bu uğurda ölür mü ? diye sordu. <br> <br>
+            Adamcağız yüzüne bakakaldı. <br> <br>
+            -Fakat Paşa Hazretleri yarım milyonumuzun ölmesine ne lüzum var ? <br> <br>
+            Başımızda siz olacaksınız ya... <br> <br> <br>
+            <b>-Benimle olmaz beyefendi hazretleri, yalnız benimle olmaz. <br> <br> Ne vakit
+                halkınızın yarım milyonu ölmeye karar verirse, o zaman gelip beni ararsınız.
+            </b>
+        </p>
+     </div>
+
+     <div class="asker-hikayesi">
+        <img  width="400" height="400" src="https://www.canyayinlari.com/skins/shared/images/content/ataturk_532x532_2.jpg">
+        <h1> Askerle Güreş </h1>
+        <p> Bir gezisinde, Kolordu binasının kapısında aslan yapılı bir Mehmetçik gördü. Çağırdı ve güleryüzle sordu: <br> <br>
+            -Sen güreş bilir misin ? <br><br>
+            Yanındakilerden en kuvvetli görünenlerle Mehmetçiği güreştirdi. Genç asker her zaman üstün geliyordu. <br> <br>
+            Çok neşelendi, ayağa fırladı, ceketini çıkarıp mehmetçiğe ense tuttu: <br> <br>
+            - Haydi, bir de benimle güreş ! <br> <br>
+            Katıksız ve temiz Anadolu çocuğu Ata'sının yüzüne hayranlıkla baktı: <br> <br> <br>
+            <b>-Atam, dedi. Senin sırtını yedi cihan yere getiremedi. Bir Mehmetçik mi bu işi başarır ?</b> <br> <br>
+            
+            
+        </p>
+     </div>
+
+     <div class="izmirden-dönüş">
+        <img  width="350" height="450" src="https://pbs.twimg.com/media/FDzsG4sWUAAly4Y.jpg">
+        <h1> Atamız Sayesinde Öyle Rahat Uyuyoruz ki</h1>
+        <p> İzmir kurtulmuştu. Çok tatlı bir yorgunlukla Ankara'ya hareket edeceklerdi. <br><br>
+            Trene binerler ve kompartımana çekilirler. Ertesi gün yaveri, Atatürk'ün kompartımanının kapısını çalar.<br> <br>
+            Atatürk, yorgun, bitkin halde kravatını yıkamaktadır. Yaveri:  <br> <br>
+            - Paşam bune hâl, hiç uyumadınız herhalde, niye böylesiniz ? der. Atatürk: <br> <br>
+            - Çocuk, kompartımanıma yastıkla battaniye koymayı unutmuş. Kolumu yastık yaptım, ağrıdı. Setremi yastık yaptım üşüdüm.<br> <br>
+            Bende uyuyamadım kalktım, der. Yaveri: <br> <br>
+            - Aman Paşam, birimize haber verseydiniz. Hemen size bir yastıkla battaniye getirirdik, der. <br> <br> <br>
+            <b> Ve bir ülke kurtarmaktan dönen komutan tarihi bir cevap verir: </b> <br> <br> 
+            <b>- Geç fark ettim. Hepiniz en az benim kadar yorgundunuz, hiçbirinize kıyamadım.</b> <br> <br>
+            <b> Önemli olan benim uyumam değil, milletimin rahat uyuması...</b>
+            
+        </p>
+     </div>
+
+    <div class="nutuktan">
+        <h1> Nutuktan Seçtiklerim ... </h1>
+        <br> <br>
+        <div class="neora_nebura">
+            <h2> Ne orada bulunacaksın, ne burada !</h2>
+            <span> <br> Atatürk, büyük taaruz için başkomutanlık yetkisi ile beraber ardı sıra işlerle uğraşmak için yetkiler aldı. Bu durum da mecliste
+                bir eleştiri konusu olarak kendini gösterdi. Bir adam dediler, hem cepheye komuta edecek hem savaş idare edecek, hem de bu işlerle birlikte
+                cephe gerisindeki işlerle uğraşacak. Bütün bunları bir adam nasıl yapabilir ? Atatürk, tüyleri diken diken eden şu cevabı vermişti: <br> <br>
+                Ben çok acemi komutanlar gördüm. Söz gelişi, bir alay komutanı yeni tümen komutanı olmuş; biraz da tecrübesiz ! Daha tecrübe edinmeye zaman
+                bulamadan, güç durumlar karşısında kalmış. Görevi boyunca bir tümene alışmış iken, düşman karşısında iki veya üç tümene birden komuta etmek zorunda
+                kalınca, kararsızlığa düşmüş, güçlüklere uğramış. Bir tek tümene komuta ettiği zaman tümenin bütün birliklerini elden geldiği kadar aynı anda görüp 
+                idare edebilen acemi komutan, gözden uzak mevzilerde yer alan iki üç tümenin savaşını idare etmek zorunda kalınca, kendi kendine:
+                "Ben hangi tümenin yanında bulunayım, onun mu bunun mu ?  Orada mı burada mı ?" diye sorar... <br> <br> <br>
+
+                <b><i>
+                    Hayır ! Ne orada bulunacaksın, ne de burada ! Öyle bir yerde bulunacaksın ki, hepsini idare edeceksin. <br> <br> O zaman: "Ben
+                    hiçbirini gerektiği gibi göremem !" der. <br>  <br> Tabii göremezsin, elbette gözlerinle göremezsin ! Akıl ve yiğitliğinle görmek gerekir.
+                </i> 
+                </b>
+            </span>
+        </div>
+        <br> <br> <br>
+        <div class="korkuyorlar">
+            <h2> Cesaret edemiyorlar efendiler, çünkü korkuyorlar...</h2>
+            <span> <br> Kurtuluş savaşına girerken Osmanlı'nın haysiyetini kaybetmekte olduğu günlerde, bütün İstanbul hükümeti işgalcilere yaranma ve merhamet dilenme
+            yolunu tutmuşlardı. Bu konuda Atamız şöyle yazmış ve Türk milletine bir öğüt vermiştir;  
+            Acı bir durum vardır ki o da Britanyalı General George'un doğrudan doğruya Osmanlı Harbiye Nazırı'na emir ve talimat vermekte oluşudur. Bu durum,
+            Ne Harbiye Nazırı'nın ne de Osmanlı Devleti'nin bağımsızlığını korumak sorumluluğunu yüklenmiş olan kabinenin şeref ve haysiyetine dokunmuyor.
+            Bu durumun, kendilerinin haysiyetini ve devletin bağımsızlığını çoktan zedelemiş olduğunu fark etmek istemiyorlar. 
+            Hiç olmazsa, protesto etmiyorlar. Hiç olmazsa, bağımsızlığımıza darbe vuran bu saldırı ve tecavüze aracılık edemeyiz diye, bağırıp
+            çağırmaya cesaret edemiyorlar... Cesaret edemiyorlar Efendiler, çünkü korkuyorlar. Nitekim korktukları başlarına gelecek. <br> <br> <br>
+
+            <b > <i> Türk milleti ve Türkiye'nin gelecekteki çocukları, şunu bir an bile akıllarından çıkarmamalıdırlar ; <br> <br>
+            İnsaf ve merhamet dilenmekle millet işleri, devlet işleri görülemez ! 
+            </i></b>
+         </span>
+        </div>
+        <br> <br> <br>
+
+        <div class="serbest">
+            <h2> Bir Başkomutanının hayali ; Milletin Bağrında Serbest bir Fert Olmak ... </h2>
+            <span> <br> Türk milleti düşmanı bağrından atmak için son büyük savaşa, Büyük Taaruza hazırlanırken, bu hazırlık sürecini kolaylaştırmak adına
+                Başkomutanlık kanunu yürürlükteydi. Büyük kurtuluş için hazırlıklar biterken Başkomutanlık Kanunu'nun da süresi bitmişdi. 
+                Bu hususta Mustafa Kemal Paşa mecliste şu konuşmayı yapmıştır : <br> <br>
+                Artık ordumuzun maddi ve manevi gücü milli gayeyi tam bir güvenle gerçekleştirebilecek düzeye ulaşmıştır. Bu bakımdan, olağanüstü
+                yetkilerin devam ettirilmesine gerek ve ihtiyaç kalmadığı görüşündeyim. Bugün ortadan kalktığını görmekle sevindiğimiz bu ihtiyacın 
+                ,bundan sonrada doğduğunu görmemekle mutlu olacağız. Mutlu sonuca güvenle ulaşacağımıza şüphe yoktur. O gün, değerli İzmir'imiz 
+                ,güzel Bursa'mız, İstanbul'umuz, Trakya'mız ana vatana katılmış olacaktır. O mutlu gün gelince, bütün millete,birlikte, en büyük mutluluklara 
+                erişmekle gurur duyacağız. <br> <br> <br>
+
+                <b> <i>Benim bundan başka ikinci bir mutluluğum vardır ki o da davamıza başladığımız gün bulunduğum duruma geri dönebilmektir. <br> <br>
+                    Dünyada, milletin bağrında serbest bir fert olabilmek kadar büyük bir mutluluk var mıdır ? Gerçekleri bilen, kalbinde ve <br> <br> vicdanında 
+                    manevi ve kutsal hazlardan başka zevk taşımayan insanlar için ne kadar yüksek olursa olsun, maddi makamların <br> <br> hiçbir değeri yoktur. <br> <br>
+                </i></b>
+                
+            </span>
+        </div>
+    </div>
+
+    <div class="karo">
+        <iframe width="700" height="375" src="https://www.youtube.com/embed/yaqmx-wo7xw?si=xjIvLg53M8EPyXc0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+
+    <div class="Başlık">
+        <h1> Son Olarak Birkaç Söz... </h1>
+    </div>
+
+    <div class="sözler">
+        <ul>
+            <li>Biz cahil dediğimiz zaman, mektepte okumamış olanları kastetmiyoruz. Kastettiğimiz ilim, hakikati bilmektir.
+                Yoksa okumuş olanlardan en büyük cahiller çıktığı gibi, hiç okumak bilmeyenlerden de hakikati gören gerçek alimler çıkabilir. <br> <br> <br>
+            </li>
+            <li>
+                Çalışmak demek, boşuna yorulmak, terlemek değildir.
+                Zamanın gereklerine göre bilim ve teknik ve her türlü uygar buluşlardan azami derecede istifade etmek zorunludur. <br> <br> <br>
+            </li>
+            <li>
+                Benim yaptığım işler, biri ötekine bağlı gerekli olan işlerdir. Fakat bana yaptıklarımdan değil, yapacaklarımdan söz edin. <br> <br> <br>
+            </li>
+            <li>
+                Beni görmek demek, mutlaka yüzümü görmek değildir. Benim fikirlerimi, duygularımı anlıyorsanız ve hissediyorsanız bu yeterlidir.
+            </li>
+        </ul>
+    </div>
+
+    <div class="sonsöz">
+        <span> Düşün dünyamda silüeti bile geçince duygulanmama sebep olan Mustafa Kemal Paşa ! <br> <br> 
+        </span>
+        <div class="web"> İlk web projem sana armağan olsun...
+        </div>
+
+        <div class="hazırlayan"> Hazırlayan: Alper Bağış </div>
+    </div>
+</body>
+</html>
